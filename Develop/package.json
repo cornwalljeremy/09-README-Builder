@@ -1,14 +1,21 @@
 {
-  "name": "static-site",
+  "name": "inquirer",
   "version": "1.0.0",
-  "description": "",
+  "description": "c",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "^C",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "c"
+  },
+  "keywords": [
+    "^c"
+  ]
 }
