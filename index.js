@@ -78,7 +78,25 @@ inquirer.prompt([
               return false;
             }
           }
-      }
+      },
+      {
+        type: 'confirm',
+        name: 'confirmCredit',
+        message: ' Did anyone help with the project?',
+        default: true
+      },
+      {
+        type: 'input',
+        name: 'credits',
+        message: 'Who contributed to this project?',
+        when: ({ confirmCredit }) => {
+          if(confirmCredit) {
+            return true;
+          } else {
+            return false
+          }
+        }
+      },
 ]).then(function(data){
     console.log(data)
     

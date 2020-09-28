@@ -1,13 +1,27 @@
-# jerej
+# **README Builder**
+  # Jeremy Cornwall
+
+  * [Project Description](#about)
   * [Installation](#installation)
-  * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
   
-  ## GitHub username: 
-  http://github.com - automatic!
+  ## GitHub username:
+  https://github.com/cornwalljeremy
+  ### About:
+  This is building a Readme by using node. 
 
-  https://github.com/jerjerj
+  ### Installation:
+  you will need to install NODE.js and the inquirer package to run this program. 
+
+  ### Credits
+  undefined
+  
+  
+  
+  
+  
+  
   ## License: 
-  ![Badge](https://img.shields.io/badge/License-undefined-red)
+  ![Badge](https://img.shields.io/badge/License-MIT-red)
 

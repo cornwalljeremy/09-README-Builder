@@ -1,9 +1,9 @@
 function generateMarkdown(data) {
   return `# **${data.title}**
   # ${data.name}
+
   * [Project Description](#about)
   * [Installation](#installation)
-  * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
   
@@ -11,6 +11,12 @@ function generateMarkdown(data) {
   https://github.com/${data.github}
   ### About:
   ${data.about}
+
+  ### Installation:
+  ${data.installation}
+
+  ### Credits
+  ${data.credits}
   
   
   
@@ -22,8 +28,5 @@ function generateMarkdown(data) {
 
 `;
 }
-// fs.writeFile('./README.md')
-// .then(data => console.log(data))
-// .catch(err => console.log(err))
 
 module.exports = generateMarkdown;
