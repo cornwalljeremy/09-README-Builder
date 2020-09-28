@@ -1,6 +1,5 @@
-function generateMarkdown(data) {
-  return `# **${data.title}**
-  # ${data.name}
+# **README Builder**
+  # Jeremy Cornwall
 
   * [Project Description](#about)
   * [Installation](#installation)
@@ -8,25 +7,25 @@ function generateMarkdown(data) {
   * [License](#license)
   
   ## GitHub Repo for this project:
-  https://github.com/${data.github}/${data.repoName}
+  https://github.com/cornwalljeremy/09-README-Builder
 
   ### About:
-  ${data.about}
-  ${data.videoLink}
+  undefined
+  <iframe src="https://drive.google.com/file/d/1haYbyAlE1N_qC025-DjAl5XNig8mG2S9/preview" width="640" height="480"></iframe>
 
   ### Installation:
-  ${data.installation}
+  node and inquirer
 
   ### Credits:
   Made by *Jeremy Cornwall*
 
-  gitHub: ${data.github},
+  gitHub: cornwalljeremy,
 
   [Jeremy's Webpage](https://cornwalljeremy.github.io/cornwall-portfolio),
 
   [LinkedIn](https://www.linkedin.com/in/jeremy-cornwall-a9698448/),
 
-   and ${data.credits} 
+   and george, google.com 
   
   
   
@@ -34,9 +33,5 @@ function generateMarkdown(data) {
   
   
   ## License: 
-  ![Badge](https://img.shields.io/badge/License-${data.license}-red)
+  ![Badge](https://img.shields.io/badge/License-MIT-red)
 
-`;
-}
-
-module.exports = generateMarkdown;

@@ -1,21 +1,31 @@
-# **README Builder**
-  # Jeremy Cornwall
+# **README**
+  # JEREMY CORNWALL
 
   * [Project Description](#about)
   * [Installation](#installation)
   * [Credits](#credits)
   * [License](#license)
   
-  ## GitHub username:
-  https://github.com/cornwalljeremy
+  ## GitHub Repo for this project:
+  https://github.com/cornwalljeremy/09-README-Builder
+
   ### About:
-  This is building a Readme by using node. 
+  here it is 
+  true
 
   ### Installation:
-  you will need to install NODE.js and the inquirer package to run this program. 
+  node and inquirer
 
-  ### Credits
-  undefined
+  ### Credits:
+  Made by *Jeremy Cornwall*
+
+  gitHub: cornwalljeremy,
+
+  [Jeremy's Webpage](https://cornwalljeremy.github.io/cornwall-portfolio),
+
+  [LinkedIn](https://www.linkedin.com/in/jeremy-cornwall-a9698448/),
+
+   and coffee 
   
   
   

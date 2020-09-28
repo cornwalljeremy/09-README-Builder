@@ -43,6 +43,11 @@ inquirer.prompt([
         }
       },
       {
+        type: 'input',
+        name: 'repoName',
+        message: 'What is the Repo name?'
+      },
+      {
         type: "list",
         message: "which license are you using?",
         name: "license",
@@ -67,6 +72,25 @@ inquirer.prompt([
         }
       },
       {
+        type: 'confirm',
+        name: 'video',
+        message: 'Is there a video showing how to use this app? ',
+        default: true
+      },
+      {
+        type: 'input',
+        name: 'videoLink',
+        message: 'Copy paste the link here:',
+        when: ({ video }) => {
+          if(video) {
+            return true;
+          } else {
+            return false
+          }
+        }
+      },
+
+      {
           type: 'input',
           name: 'installation',
           message: 'Installation instructions.',
@@ -84,6 +108,7 @@ inquirer.prompt([
         name: 'confirmCredit',
         message: ' Did anyone help with the project?',
         default: true
+        
       },
       {
         type: 'input',
@@ -98,8 +123,9 @@ inquirer.prompt([
         }
       },
 ]).then(function(data){
-    console.log(data)
+    const fileName = data.title.toLowerCase().split(' ').join('') + '.md';
+    console.log(fileName)
     
-    fs.writeFileSync('README.md', generateMarkdown(data),
+    fs.writeFileSync(fileName, generateMarkdown(data),
      
     )})
