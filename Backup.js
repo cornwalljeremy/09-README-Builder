@@ -1,35 +1,24 @@
-const fs = require('fs')
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
-// const generateMarkdown = require('./utils/generateMarkdown.js');
-inquirer.prompt([
-  {
-    type: "input",
-    name: "title",
-    message: "Project Title:",
-    validate: (projInput) => {
-      if (projInput) {
-        return true;
-      } else {
-        console.log("Please enter Your Name");
-        return false;
-      }
-    },
-  },
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const path = require('path');
+
+// array of questions for user
+const questions = [
     {
-        type: "input",
-        name: "name",
-        message: "What Is Your Name? (Required)",
-        validate: (nameInput) => {
-          if (nameInput) {
-            return true;
-          } else {
-            console.log("Please enter Your Name");
-            return false;
-          }
-        },
+      type: "input",
+      name: "name",
+      message: "What Is Your Name? (Required)",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter Your Name");
+          return false;
+        }
       },
-      {
+    },
+    {
         type: "input",
         name: "github",
         message: "enter your github user name (Required)",
@@ -41,12 +30,6 @@ inquirer.prompt([
             return false;
           }
         }
-      },
-      {
-        type: "list",
-        message: "which license are you using?",
-        name: "license",
-        choices: ["MIT","Apache","Mozilla", "Bat_Signal", "GNU AGPLv3"]
       },
       {
         type: 'confirm',
@@ -68,7 +51,7 @@ inquirer.prompt([
       },
       {
           type: 'input',
-          name: 'installation',
+          name: 'instructions',
           message: 'Installation instructions.',
           validate: instrucInput => {
             if (instrucInput){
@@ -79,9 +62,24 @@ inquirer.prompt([
             }
           }
       }
-]).then(function(data){
-    console.log(data)
-    
-    fs.writeFileSync('README.md', generateMarkdown(data),
-     
-    )})
+    ];
+
+
+ function writeToFile(fileName, data) {
+     console.log(writeToFile)
+return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+
+}
+
+function init() {
+    console.log(init)
+    inquirer.prompt(questions).then(response => {
+        writeToFile('README.md', generateMarkdown(response));
+    })
+    ;
+}
+   
+init()
+
+// function call to initialize program
+

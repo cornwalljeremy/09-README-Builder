@@ -1,36 +1,29 @@
-const { clear } = require('console');
-const fs = require('fs');
-const inquirer = require('inquirer');
-const path = require('path');
-
-const writeToFile = fileContent => {
-  console.log(writeToFile)
-  return new Promise((resolve, reject) => {
-    fs.writeToFile('./README.md', fileContent, err => {
-      if(err) {
-        reject(err);
-        return;
-      }
-      resolve({
-        ok: true,
-        message: 'File Created'
-      })
-    })
-  })
-  
-}
-
-// // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# **${data.title}**
+  # ${data.name}
+  * [Project Description](#about)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
   
+  ## GitHub username:
+  https://github.com/${data.github}
+  ### About:
+  ${data.about}
+  
+  
+  
+  
+  
+  
+  ## License: 
+  ![Badge](https://img.shields.io/badge/License-${data.license}-red)
 
 `;
-
 }
-writeToFile('./README.md')
-.then(data => console.log(data))
-.catch(err => console.log(err))
-
+// fs.writeFile('./README.md')
+// .then(data => console.log(data))
+// .catch(err => console.log(err))
 
 module.exports = generateMarkdown;
