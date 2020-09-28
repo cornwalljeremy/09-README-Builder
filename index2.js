@@ -29,10 +29,10 @@ inquirer.prompt([
         }
       },
 ]).then(function(data){
+    console.log(data)
     return new Promise((resolve, reject) =>{
-    fs.writeFile('README.md', 
-    `# ${data.name},
-       ${data.github}`, err => {
+    fs.writeFile('README.md', data.stringify(),
+     err => {
         if(err){
         reject(err);
             return ;
