@@ -7,11 +7,16 @@ function generateMarkdown(data) {
   * [Credits](#credits)
   * [License](#license)
   
+  ## License: 
+  ![Badge](https://img.shields.io/badge/License-${data.license}-red)
+  
   ## GitHub Repo for this project:
   [${data.repoName}](https://github.com/${data.github}/${data.repoName})
 
   ### About:
   ${data.about}
+
+  ### Video Link:
   ${data.videoLink}
 
   ### Installation:
@@ -19,6 +24,7 @@ function generateMarkdown(data) {
 
   ### Credits:
   Made by *Jeremy Cornwall*
+  (cornwall.jeremy@gmail.com)
 
   gitHub: ${data.github},
 
@@ -33,8 +39,7 @@ function generateMarkdown(data) {
   
   
   
-  ## License: 
-  ![Badge](https://img.shields.io/badge/License-${data.license}-red)
+  
 
 `;
 }

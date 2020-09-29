@@ -11,7 +11,7 @@ inquirer.prompt([
       if (projInput) {
         return true;
       } else {
-        console.log("Please enter Your Name");
+        console.log("Please enter Your Project Title");
         return false;
       }
     },
