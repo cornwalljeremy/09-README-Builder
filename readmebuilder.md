@@ -7,14 +7,17 @@
   * [License](#license)
   
   ## GitHub Repo for this project:
-  https://github.com/cornwalljeremy/09-README-Builder
+  [09-README-Builder](https://github.com/cornwalljeremy/09-README-Builder)
 
   ### About:
-  undefined
-  <iframe src="https://drive.google.com/file/d/1haYbyAlE1N_qC025-DjAl5XNig8mG2S9/preview" width="640" height="480"></iframe>
+  An Easy app to build a decent README using node.
+  
+  ### Video:
+
+  https://drive.google.com/file/d/1SaoFrrqJVaZ7Cx5NB-D8-702hTQCwg2z/view
 
   ### Installation:
-  node and inquirer
+  You will need Node and the inquirer package to run this app. 
 
   ### Credits:
   Made by *Jeremy Cornwall*
@@ -25,7 +28,7 @@
 
   [LinkedIn](https://www.linkedin.com/in/jeremy-cornwall-a9698448/),
 
-   and george, google.com 
+   and google.com, George my dog, batman, All the TAs and my tutor.  
   
   
   

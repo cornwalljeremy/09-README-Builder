@@ -8,7 +8,7 @@ function generateMarkdown(data) {
   * [License](#license)
   
   ## GitHub Repo for this project:
-  https://github.com/${data.github}/${data.repoName}
+  [${data.repoName}](https://github.com/${data.github}/${data.repoName})
 
   ### About:
   ${data.about}
