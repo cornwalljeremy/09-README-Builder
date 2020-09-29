@@ -23,8 +23,8 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ### Credits:
-  Made by *Jeremy Cornwall*
-  (cornwall.jeremy@gmail.com)
+  Made by: 
+  [Jeremy Cornwall](cornwall.jeremy@gmail.com)
 
   gitHub: ${data.github},
 
