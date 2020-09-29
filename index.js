@@ -123,9 +123,9 @@ inquirer.prompt([
         }
       },
 ]).then(function(data){
-    const fileName = data.title.toLowerCase().split(' ').join('') + '.md';
-    console.log(fileName)
+    // const fileName = data.title.toLowerCase().split(' ').join('') + '.md';
+    // console.log(fileName)
     
-    fs.writeFileSync(fileName, generateMarkdown(data),
+    fs.writeFileSync('README.md', generateMarkdown(data),
      
     )})
